@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.toDoContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .tasks {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  height: 5rem;
+} */
+
+.submitBtn {
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #000000;
+}
