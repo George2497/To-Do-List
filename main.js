@@ -8,9 +8,6 @@ const tasks = document.querySelector('.tasks');
 // A blank array to hold onto the to-do items
 const toDoItems = [];
 
-
-
-
 const addItem = function () {
     const inputBoxValue = inputBox.value
 
