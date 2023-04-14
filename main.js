@@ -1,15 +1,32 @@
 'use strict';
 
 // Global Variables
+const toDoContainer = document.querySelector('.toDoContainer');
 const inputBox = document.querySelector('.inputBox');
 const submitBtn = document.querySelector('.submitBtn');
 const tasks = document.querySelector('.tasks');
 
-// A blank array to hold onto the to-do items
-const toDoItems = [];
 
+// A blank array to hold onto the to-do items
+let toDoItems = [];
+
+
+// Getting local storgae to the to-do list
+if (localStorage.getItem('toDoItems')) {
+    const storedToDoItems = JSON.parse(localStorage.getItem('toDoItems'));
+    if (Array.isArray(storedToDoItems)) {
+        toDoItems = storedToDoItems;
+        toDoItems.forEach((toDoItem) => {
+            const newToDoEl = document.createElement('li');
+            newToDoEl.innerText = toDoItem.inputBoxValue;
+            tasks.appendChild(newToDoEl);
+        });
+    }
+}
+
+// gettingLocalStorage();
 const addItem = function () {
-    const inputBoxValue = inputBox.value
+    const inputBoxValue = inputBox.value.trim();
 
     // Checks to see if a value has been inputted
     if (inputBoxValue !== '') {
@@ -23,7 +40,9 @@ const addItem = function () {
         // Push the to-do items to the toDoItems array to be posted
         toDoItems.push(toDo);
 
-        // Add a new HTML item in the form of a list (li) when
+        settingLocalStorage();
+
+        // Add a new HTML item in the form of a list(li) when
         // the "Submit" button has been pressed
         const newToDoEl = document.createElement('li');
         newToDoEl.innerText = inputBoxValue;
@@ -36,4 +55,12 @@ const addItem = function () {
         return
     }
 }
+
 addItem();
+
+// Setting local storage for the to-do list
+const settingLocalStorage = function () {
+    localStorage.setItem('toDoItems', JSON.stringify('toDoItems'));
+}
+
+submitBtn.addEventListener('click', addItem);
