@@ -10,7 +10,6 @@ const tasks = document.querySelector('.tasks');
 // A blank array to hold onto the to-do items
 let toDoItems = [];
 
-
 // Getting local storgae to the to-do list
 if (localStorage.getItem('toDoItems')) {
     const storedToDoItems = JSON.parse(localStorage.getItem('toDoItems'));
