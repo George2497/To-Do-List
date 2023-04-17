@@ -24,6 +24,8 @@ if (localStorage.getItem('toDoItems')) {
     }
 }
 
+
+
 // gettingLocalStorage();
 const addItem = function () {
     const inputBoxValue = inputBox.value.trim();
