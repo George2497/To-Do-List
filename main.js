@@ -8,7 +8,7 @@ const tasks = document.querySelector('.tasks');
 
 
 // A blank array to hold onto the to-do items
-let toDoItems = [];
+let toDoItems = JSON.parse(localStorage.getItem('toDoItems')) || [];
 
 // Getting local storgae to the to-do list
 if (localStorage.getItem('toDoItems')) {
@@ -22,9 +22,6 @@ if (localStorage.getItem('toDoItems')) {
         });
     }
 }
-
-//teting reomote repo
-
 
 // gettingLocalStorage();
 const addItem = function () {
@@ -62,7 +59,7 @@ addItem();
 
 // Setting local storage for the to-do list
 const settingLocalStorage = function () {
-    localStorage.setItem('toDoItems', JSON.stringify('toDoItems'));
+    localStorage.setItem('toDoItems', JSON.stringify(toDoItems));
 }
 
 submitBtn.addEventListener('click', addItem);
