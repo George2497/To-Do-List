@@ -7,14 +7,16 @@ h2 {
   margin-top: -1rem;
 }
 
-.toDoContainer {
+.toDoContainer,
+.tasksList {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.submitBtn {
+.submitBtn,
+.resetBtn {
   margin: 0.5rem;
   border-radius: 0.5rem;
   border: 1px solid #000000;

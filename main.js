@@ -4,6 +4,7 @@
 const toDoContainer = document.querySelector('.toDoContainer');
 const inputBox = document.querySelector('.inputBox');
 const submitBtn = document.querySelector('.submitBtn');
+const resetBtn = document.querySelector('.resetBtn');
 const tasks = document.querySelector('.tasks');
 
 // A blank array to hold onto the to-do items
@@ -22,6 +23,9 @@ if (localStorage.getItem('toDoItems')) {
         });
     }
 }
+
+// Get's the current date
+const date = new Date();
 
 const addItem = function () {
     const inputBoxValue = inputBox.value.trim();
@@ -52,9 +56,17 @@ const addItem = function () {
         return
     }
 }
+
 // Setting local storage for the to-do list
 submitBtn.addEventListener('click', addItem);
 
+// Resets the list of all entries
+resetBtn.addEventListener('click', function () {
+    localStorage.clear();
+    location.reload();
+});
+
+// Setting the local storage
 const settingLocalStorage = function () {
     localStorage.setItem('toDoItems', JSON.stringify(toDoItems));
 }
