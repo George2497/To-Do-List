@@ -9,6 +9,7 @@ const tasks = document.querySelector('.tasks');
 
 // A blank array to hold onto the to-do items
 let toDoItems = JSON.parse(localStorage.getItem('toDoItems')) || [];
+console.log(toDoItems);
 
 // Getting local storgae to the to-do list
 if (localStorage.getItem('toDoItems')) {
@@ -17,49 +18,47 @@ if (localStorage.getItem('toDoItems')) {
         toDoItems = storedToDoItems;
         toDoItems.forEach((toDoItem) => {
             const newToDoEl = document.createElement('li');
-            newToDoEl.innerText = toDoItem.inputBoxValue;
+            newToDoEl.innerText = toDoItem.text;
             tasks.appendChild(newToDoEl);
         });
     }
 }
 
-// gettingLocalStorage();
+// storedToDoItems();
 const addItem = function () {
     const inputBoxValue = inputBox.value.trim();
 
     // Checks to see if a value has been inputted
-    if (inputBoxValue !== '') {
+    // if (inputBoxValue !== '') {
 
-        // Create a new to-do item and add it to the array
-        const toDo = {
-            text: inputBoxValue,
-            completed: false
-        };
+    // Create a new to-do item and add it to the array
+    const toDo = {
+        text: inputBoxValue,
+        completed: false
+    };
 
-        // Push the to-do items to the toDoItems array to be posted
-        toDoItems.push(toDo);
+    // Push the to-do items to the toDoItems array to be posted
+    toDoItems.push(toDo);
 
-        settingLocalStorage();
+    settingLocalStorage();
 
-        // Add a new HTML item in the form of a list(li) when
-        // the "Submit" button has been pressed
-        const newToDoEl = document.createElement('li');
-        newToDoEl.innerText = inputBoxValue;
-        tasks.appendChild(newToDoEl);
+    // Add a new HTML item in the form of a list(li) when
+    // the "Submit" button has been pressed
+    const newToDoEl = document.createElement('li');
+    newToDoEl.innerText = inputBoxValue;
+    tasks.appendChild(newToDoEl);
 
-    }
+    // }
 
     // If the entry is empty do not post this to-do item
-    if (inputBoxValue == '') {
-        return
-    }
+    // if (inputBoxValue == '') {
+    //     return
+    // }
 }
-
-addItem();
-
 // Setting local storage for the to-do list
+
+submitBtn.addEventListener('click', addItem);
+
 const settingLocalStorage = function () {
     localStorage.setItem('toDoItems', JSON.stringify(toDoItems));
 }
-
-submitBtn.addEventListener('click', addItem);
