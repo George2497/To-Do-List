@@ -23,13 +23,9 @@ if (localStorage.getItem('toDoItems')) {
     }
 }
 
-<<<<<<< HEAD
-// gettingLocalStorage();
-=======
 // Get's the current date
 const date = new Date();
 
->>>>>>> 107057c10f854efca6ab72d9807bc92777f7d573
 const addItem = function () {
     const inputBoxValue = inputBox.value.trim();
 
