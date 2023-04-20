@@ -21,3 +21,11 @@ h2 {
   border-radius: 0.5rem;
   border: 1px solid #000000;
 }
+
+.deleteItem {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}

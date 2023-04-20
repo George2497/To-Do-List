@@ -6,6 +6,7 @@ const inputBox = document.querySelector('.inputBox');
 const submitBtn = document.querySelector('.submitBtn');
 const resetBtn = document.querySelector('.resetBtn');
 const tasks = document.querySelector('.tasks');
+const deleteItem = document.querySelector('.deleteItem');
 
 // A blank array to hold onto the to-do items
 let toDoItems = JSON.parse(localStorage.getItem('toDoItems')) || [];
@@ -58,6 +59,12 @@ const addItem = function () {
 
 // Setting local storage for the to-do list
 submitBtn.addEventListener('click', addItem);
+
+// Create a delete button for specific items
+deleteItem.addEventListener('click', function () {
+    localStorage.removeItem()
+    location.reload();
+})
 
 // Resets the list of all entries
 resetBtn.addEventListener('click', function () {
