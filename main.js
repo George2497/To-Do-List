@@ -8,6 +8,9 @@ const resetBtn = document.querySelector('.resetBtn');
 const tasks = document.querySelector('.tasks');
 const deleteItem = document.querySelector('.deleteItem');
 
+// Get's the current date
+const date = new Date();
+
 // A blank array to hold onto the to-do items
 let toDoItems = JSON.parse(localStorage.getItem('toDoItems')) || [];
 
@@ -17,15 +20,13 @@ if (localStorage.getItem('toDoItems')) {
     if (Array.isArray(storedToDoItems)) {
         toDoItems = storedToDoItems;
         toDoItems.forEach((toDoItem) => {
-            const newToDoEl = document.createElement('li');
+            const newToDoEl = document.createElement('p');
             newToDoEl.innerText = toDoItem.text;
-            tasks.appendChild(newToDoEl);
+            tasks.appendChild(newToDoEl, date);
         });
     }
 }
 
-// Get's the current date
-const date = new Date();
 
 const addItem = function () {
     const inputBoxValue = inputBox.value.trim();
@@ -46,7 +47,7 @@ const addItem = function () {
 
         // Add a new HTML item in the form of a list(li) when
         // the "Submit" button has been pressed
-        const newToDoEl = document.createElement('li');
+        const newToDoEl = document.createElement('p');
         newToDoEl.innerText = inputBoxValue;
         tasks.appendChild(newToDoEl);
     }
@@ -57,12 +58,17 @@ const addItem = function () {
     }
 }
 
+
 // Setting local storage for the to-do list
-submitBtn.addEventListener('click', addItem);
+submitBtn.addEventListener('click', function () {
+    addItem();
+    // Resets the input box value to blank when an item has been added
+    inputBox.value = '';
+});
 
 // Create a delete button for specific items
 deleteItem.addEventListener('click', function () {
-    localStorage.removeItem()
+    localStorage.removeItem('toDoItem')
     location.reload();
 })
 
