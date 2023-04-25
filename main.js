@@ -22,7 +22,9 @@ if (localStorage.getItem('toDoItems')) {
         toDoItems.forEach((toDoItem) => {
             const newToDoEl = document.createElement('p');
             newToDoEl.innerText = toDoItem.text;
-            tasks.appendChild(newToDoEl, date);
+            tasks.appendChild(newToDoEl);
+            // let html = '<button class="deleteItem">🗑️</button>'
+            // deleteItem.insertAdjacentHTML('beforeend', html);
         });
     }
 }
