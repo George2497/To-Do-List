@@ -1,0 +1,9 @@
+8
+63C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\package.json133332169776560127 0
+68C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\package-lock.json133332011170574630 0
+54C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\src133332169722778376 1
+57C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\src\js133332015685243496 1
+58C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\src\css133332015724883826 1
+65C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\src\index.html133332010272552427 0
+67C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\src\css\main.css133332010272562405 0
+65C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\src\js\main.js133332010272572360 0

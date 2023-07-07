@@ -1,0 +1,17 @@
+16
+55C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\dist133332170128249969 1
+78C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\dist\To-Do-List.59712999.js133332170127831088 0
+63C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\package.json133332169776560127 0
+68C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\package-lock.json133332011170574630 0
+54C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\src133332169722778376 1
+57C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\src\js133332015685243496 1
+58C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\src\css133332015724883826 1
+65C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\src\index.html133332170122864370 0
+65C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\src\js\main.js133332010272572360 0
+67C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\src\css\main.css133332010272562405 0
+74C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\dist\index.34df27b5.css133332170127741320 0
+78C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\dist\index.34df27b5.css.map133332170127960733 0
+73C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\dist\index.aa69868b.js133332170127821107 0
+77C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\dist\index.aa69868b.js.map133332170127960733 0
+66C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\dist\index.html133332170128070436 0
+82C:\Users\georg_0mijctp\OneDrive\Desktop\To-Do-List\dist\To-Do-List.59712999.js.map133332170127960733 0

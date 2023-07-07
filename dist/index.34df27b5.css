@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.toDoContainer, .tasksList {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.submitBtn, .resetBtn {
+  border: 1px solid #000;
+  border-radius: .5rem;
+  margin: .2rem;
+}
+
+.deleteItem {
+  text-align: center;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.34df27b5.css.map */
